@@ -1,13 +1,12 @@
 @extends('layouts.app')
 @section('title', '| Login')
 @section('content')
-
-<section class="breadcrumbs">
+<section class="breadcrumbs" style="margin-top: 110px">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
             <h5>Halaman Login</h5>
             <ol>
-                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('home') }}">Beranda</a></li>
                 <li>Login</li>
             </ol>
         </div>
@@ -17,17 +16,17 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <img class="img-fluid" src="{{ asset('images/auth/login.png') }}" alt="login">
+                <img class="img-fluid" src="{{ asset('images/login.png') }}" alt="login">
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="mt-4">
-                    <p class="font-weight-bold mb-0 fs-22">Login SIPESAT</p>
-                    <span class="fs-13">Masukan NIK dan Password</span>
-                    @if ($errors->has('nik'))
+                    <p class="font-weight-bold mb-0 fs-22">Login</p>
+                    <span class="fs-13">Masukan Username dan Password</span>
+                    @if ($errors->has('username'))
                     <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show mt-2" id="errorAlert" role="alert">
                         <i class="bi bi-exclamation-circle-fill mr-2"></i>
                         <div class="fs-13">
-                            {{ $errors->first('nik') }}
+                            {{ $errors->first('username') }}
                         </div>
                         <button class="btn-close fs-20" data-bs-dismiss="alert" style="border: none;background: none;padding-top: 14px"><i class="bi bi-x"></i></button>
                     </div>
@@ -36,7 +35,7 @@
                         @csrf
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                            <input type="number" class="form-control fs-15 @if ($errors->has('nik')) is-invalid @endif" name="nik" value="{{ old('nik') }}" placeholder="NIK" autocomplete="off" autofocus required>
+                            <input type="text" class="form-control fs-15 @if ($errors->has('username')) is-invalid @endif" name="username" value="{{ old('username') }}" placeholder="Username" autocomplete="off" autofocus required>
                         </div>
                         <div class="input-group mb-2">
                             <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
@@ -47,15 +46,15 @@
                                 <input class="mr-2" type="checkbox" onclick="myFunction()"><span class="fs-14">Tampilkan</span>
                             </div>
                             <div class="col-6 text-right">
-                                <span class="bx-pull-right fs-14"><a href="#">Lupa Password ?</a></span>
+                                <span class="bx-pull-right fs-14"><a href="#" class="text-success">Lupa Password ?</a></span>
                             </div>
                         </div>
                         <div class="d-grid gap-2">
-                            <button class="btn btn-primary btn-lg fs-15"><i class="bi bi-arrow-right m-r-5"></i>Login</button>
+                            <button class="btn btn-success btn-lg fs-15"><i class="bi bi-arrow-right m-r-5"></i>Login</button>
                         </div>
                     </form>
                     <hr class="mt-4">
-                    <p class="fs-14">Belum punya akun ?<a href="{{ route('register') }}" class="ml-2">Daftar sekarang</a></p>
+                    <p class="fs-14">Belum punya akun ?<a href="{{ route('register') }}" class="ml-2 text-success">Daftar sekarang</a></p>
                 </div>
             </div>
         </div>

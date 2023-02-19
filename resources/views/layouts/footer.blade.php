@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-2">
-                <p class="font-weight-bold fs-18">{{ config('app.daerah') }}</p>
+                <p class="font-weight-bold fs-18">Kerupuk DUA KURMA</p>
                 <p class="mb-1">Senin - Kamis 08:00 – 16:00 WIB</p>
                 <p class="mt-0">Jumat 07:30 – 16:00 WIB</p>
                 <p class="mb-0"><i class="bi bi-pin-map-fill text-primary1 mr-2"></i>Jl. Adi Sengkong Blok A No.8, Serua, Kec. Ciputat, Kota Tangerang Selatan, Banten 15414</p>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <hr>
-        <p class="text-center font-weight-bold mb-0">Hak Cipta © 2022 {{ config('app.daerah') }}</p>
+        <p class="text-center font-weight-bold mb-0">Hak Cipta © 2023 DUA KURMA</p>
     </div>
 </footer>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

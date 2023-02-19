@@ -1,15 +1,15 @@
 .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #3498DB !important;
+    border-color: #03AC0E !important;
     outline: 0;
     box-shadow: none !important;
 }
 
 .btn-primary {
-    background: #3498DB !important;
+    background: #03AC0E !important;
     color: white !important;
-    border-color: #3498DB !important;
+    border-color: #03AC0E !important;
 }
 
 .top-div {
@@ -22,7 +22,7 @@
     }
 
     .text-center-m {
-        text-align: center;
+        text-align: center !important;
     }
 
     .mb-5-m {
@@ -38,6 +38,14 @@
     .top-div {
         margin-top: 0px !important;
     }
+}
+
+.h-header:hover {
+    color: #61933A !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
 }
 
 .img-circular {
@@ -303,7 +311,7 @@
 }
 
 .text-primary1 {
-    color: #3498DB
+    color: #6A9739
 }
 
 .text-success1 {
@@ -316,7 +324,7 @@ a.text-success1:focus {
 }
 
 .bg-primary1 {
-    background: #3498DB;
+    background: #6A9739;
 }
 
 .text-set {
@@ -367,10 +375,10 @@ table.data-table {
     background-color: rgba(223, 223, 223, 0.25);
 }
 
-.card-bg-bolor{
+.card-bg-bolor {
     background-color: #303030 !important;
 }
 
-.icon-color{
+.icon-color {
     color: #8BC34A !important;
 }
